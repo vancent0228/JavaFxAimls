@@ -1,3 +1,4 @@
+//使用Application.launch(xxxx.class,xxxx)執行 繼承 Application 的 Class
 package Lesson002.fx.com;
 
 import javafx.application.Application;

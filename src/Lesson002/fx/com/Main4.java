@@ -1,3 +1,6 @@
+
+//JavaFX视频教程第2课，application的启动方式和生命周期
+
 package Lesson002.fx.com;
 
 import javafx.application.Application;

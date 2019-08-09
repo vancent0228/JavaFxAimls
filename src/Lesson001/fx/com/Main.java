@@ -1,3 +1,6 @@
+
+//JavaFX视频教程第1课，hello world
+
 package Lesson001.fx.com;
 
 import javafx.application.Application;
