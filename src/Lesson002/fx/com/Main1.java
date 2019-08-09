@@ -9,8 +9,8 @@ public class Main1 extends Application {
     }
     @Override
     public void start(Stage primaryStage) throws Exception {
-        System.out.println("這是start方法");
+        System.out.println("這是start方法 Main1");
         primaryStage.show();
-        primaryStage.setTitle("Lesson002");
+        primaryStage.setTitle("Lesson002  Main1");
     }
 }

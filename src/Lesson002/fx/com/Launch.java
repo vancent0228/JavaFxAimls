@@ -3,14 +3,14 @@ package Lesson002.fx.com;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
-public class Main2 extends Application {
+public class Launch extends Application {
     public static void main(String[] args) {
-        launch(Main2.class,args);
+        launch(Launch.class,args);
     }
     @Override
     public void start(Stage primaryStage) throws Exception {
-        System.out.println("這是start方法 Main2");
+        System.out.println("這是start方法 Launch");
         primaryStage.show();
-        primaryStage.setTitle("Lesson002 Main2");
+        primaryStage.setTitle("Lesson002 Launch");
     }
 }
