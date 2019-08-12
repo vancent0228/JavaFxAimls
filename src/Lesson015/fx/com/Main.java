@@ -17,6 +17,7 @@ public class Main extends Application {
     static boolean isManaged = false;
     static boolean isVisible = false;
     static double OpacityValue = 0;
+    static boolean isDisable = true;
     Label label=new Label();
 
     public static void main(String[] args) {
@@ -56,6 +57,15 @@ public class Main extends Application {
             OpacityValue = (OpacityValue == 0) ? 1 : 0;
             b7.setText("b3.setOpacity(" + OpacityValue + ")");
         });
+
+        Button b8 = new Button("b3.isDisable(false)");
+        b8.setOnAction(e -> {
+            b3.setDisable(isDisable);
+            new Print(hbox);
+            isDisable = !isDisable;
+            b8.setText("b3.setDisable(" + isDisable + ")");
+        });
+
         //b3.setManaged(false);
         //b3.setVisible(false);
         //b3.setOpacity(0);
@@ -69,7 +79,7 @@ public class Main extends Application {
         hbox.getChildren().addAll(b1, b2, b3, b4);
 
         vbox.setSpacing(10);
-        vbox.getChildren().addAll(b5, b6, b7,label);
+        vbox.getChildren().addAll(b5, b6, b7,b8,label);
 
         ap.setTopAnchor(vbox, 100.0);
         ap.setLeftAnchor(vbox, 20.0);
