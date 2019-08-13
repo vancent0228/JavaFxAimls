@@ -57,6 +57,12 @@ public class Main extends Application {
                 b1.fire();
             }
         });
+
+        //第五種
+        KeyCombination kc5 = KeyCombination.valueOf("ctrl+alt+k");
+        Mnemonic mnemonic5 = new Mnemonic(b1, kc5);
+        scene.addMnemonic(mnemonic5);
+
         Screen screen = Screen.getPrimary();
         javafx.geometry.Rectangle2D rec = screen.getVisualBounds();
         primaryStage.setX(rec.getMinX());
