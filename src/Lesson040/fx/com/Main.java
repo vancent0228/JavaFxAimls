@@ -24,9 +24,8 @@ public class Main extends Application {
         cbb.setConverter(new StringConverter<String>() {
             @Override
             public String toString(String object) {
-                String str=(String)object;
-                //System.out.println(str);
-                return str;
+                //System.out.println(object);
+                return object;
             }
 
             @Override
@@ -39,11 +38,10 @@ public class Main extends Application {
             @Override
             public ListCell<String> call(ListView<String> param) {
                 ListCell<String> listCell = new ListCell<String>();
-                param.getItems().forEach(item-> System.out.println("item="+item));
+                param.getItems().forEach(System.out::println);
                 return listCell;
             }
         });
-
 
 
         cbb.setPrefWidth(150);
